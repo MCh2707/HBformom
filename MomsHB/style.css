@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap');
+
+body {
+    font-family: "Noto Sans Georgian", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    margin: 0;
+    padding: 0;
+    background: #fbeaff;
+    color: #333;
+}
+
+.message-main {
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    background: #ff99cc;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.main {
+    padding: 20px;
+}
+
+.message-form {
+    margin-bottom: 30px;
+}
+
+.message-form h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background: #ff66a3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #ff3385;
+}
+
+.messages {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.message:last-child {
+    border-bottom: none;
+}
+
+.footer {
+    padding: 0 30px;
+}
+
+
+.heart-img {
+    display: flex;
+    justify-content: center;
+}
+
+.heart {
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .message-main {
+        width: 100%;
+        height: auto;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+
+    .heart-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heart {
+        width: 300px;
+        height: 300px;
+        margin-left: 0;
+    }
+
+    .message-form input, .message-form textarea {
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .message-form input, .message-form textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    form button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .heart {
+        width: 250px;
+        height: 250px;
+    }
+}
